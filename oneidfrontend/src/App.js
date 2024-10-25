@@ -1,24 +1,22 @@
-// import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Button from './components/Button/Button';
+import Input from './components/Input/Input';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <header className="App-header">
-        <h1>HELLO</h1>
-        {/* <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p> */}
-        {/* <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
-      </header>
+      <Navbar />
+      <div style={{ padding: '20px' }}>
+        <h1>Welcome to OneID</h1>
+        <Input label="Username" placeholder="Enter your username" />
+        <Button text="Submit" onClick={() => alert('Button clicked!')} />
+      </div>
     </div>
+    </Router>
   );
 }
 
