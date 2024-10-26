@@ -1,0 +1,33 @@
+
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.create-id-button {
+    background-color: #0078D4;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.create-id-button:hover {
+    background-color: #005a9e;
+}
