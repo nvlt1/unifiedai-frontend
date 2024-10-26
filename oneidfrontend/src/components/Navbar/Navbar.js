@@ -9,6 +9,8 @@ const Navbar = () => {
             <Link to="/create-id">Create ID</Link>
             <Link to="/dashboard">Dashboard</Link>
             <Link to="/settings">Settings</Link>
+            <Link to="/verification">Verification</Link>
+            <Link to="/share-identity">Share Identity</Link>
         </nav>
 
     );
