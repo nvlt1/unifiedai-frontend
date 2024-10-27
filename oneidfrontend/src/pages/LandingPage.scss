@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 100vh;
     text-align: center;
     padding: 20px;
 }
@@ -12,37 +12,26 @@
 .main-heading {
     font-size: 4em;
     font-weight: bold;
-    color: white;
     margin: 0.5em 0;
 }
 
 .sub-heading {
     font-size: 1.5em;
-    color: white;
     margin-bottom: 2em;
 }
 
-// h1 {
-//     font-size: 3em;
-//     margin-bottom: 0.5em;
-// }
-
-// p {
-//     font-size: 1.2em;
-//     margin-bottom: 1.5em;
-// }
-
 .create-id-button {
-    background-color: #0078D4;
+    background-color: #28a745;
     color: white;
-    padding: 12px 24px;
+    padding: 15px 30px;
     border-radius: 5px;
     text-decoration: none;
     font-size: 1.2em;
+    margin-bottom: 2em;
 }
 
 .create-id-button:hover {
-    background-color: #005a9e;
+    background-color: #218838;
 }
 
 .service-intro {
@@ -55,6 +44,6 @@
 
 .footer {
     margin-top: 2em;
-    color: white;
+    color: #333;
     padding: 20px;
 }

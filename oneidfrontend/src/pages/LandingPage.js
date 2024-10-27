@@ -5,9 +5,7 @@ import './LandingPage.scss';
 
 const LandingPage = () => {
     return (
-        <div className="landing-container"
-            //  style={{ backgroundImage: `url(${backgroundImage})` }}
-            >
+        <div className="landing-container">
             
             <h1 className="main-heading">OneID New Experience</h1>
             <p className="sub-heading">UnifiedAI Technological Solutions</p>
