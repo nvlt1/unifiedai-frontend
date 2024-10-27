@@ -9,15 +9,28 @@
     padding: 20px;
 }
 
-h1 {
-    font-size: 3em;
-    margin-bottom: 0.5em;
+.main-heading {
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+    margin: 0.5em 0;
 }
 
-p {
-    font-size: 1.2em;
-    margin-bottom: 1.5em;
+.sub-heading {
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 2em;
 }
+
+// h1 {
+//     font-size: 3em;
+//     margin-bottom: 0.5em;
+// }
+
+// p {
+//     font-size: 1.2em;
+//     margin-bottom: 1.5em;
+// }
 
 .create-id-button {
     background-color: #0078D4;
@@ -30,4 +43,18 @@ p {
 
 .create-id-button:hover {
     background-color: #005a9e;
+}
+
+.service-intro {
+    background-color: #002d72;
+    color: white;
+    padding: 30px;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.footer {
+    margin-top: 2em;
+    color: white;
+    padding: 20px;
 }
