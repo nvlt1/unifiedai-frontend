@@ -1,123 +1,234 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #f3f3f3;
-    width: 100%;
-  }
-  
-  .navbar-left {
-    display: flex;
-    align-items: center;
-  }
-  
-  .app-title {
-    font-size: 1.5em;
-    font-weight: bold;
-  }
+  display: flex;
+  justify-content: space-between; // Keeps elements aligned on both sides
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f3f3f3;
+  width: 100%;
+  position: relative;
+}
 
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  display: block;
+  font-size: 2em;
+  cursor: pointer;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: lightblue;
+}
+
+.app-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  margin-right: 15px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.login-btn,
+.signup-btn {
+  margin-right: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-btn {
+  background-color: #e0e0e0;
+}
+
+.signup-btn {
+  background-color: #0078D4;
+  color: white;
+}
+
+.signup-btn:hover {
+  background-color: #005a9e;
+}
+
+/* Collapsible mobile menu */
+.mobile-menu {
+  display: none; // Initially hidden
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 50px;
+  left: 10px; // Positioned below hamburger
+  background-color: #f3f3f3;
+  width: 180px; // Smaller dropdown width
+  padding: 10px;
+  border: 1px solid #ccc;
+  z-index: 1000;
+}
+
+.mobile-menu.open {
+  display: flex; // Show when menu is open
+}
+
+.nav-link {
+  padding: 8px 0;
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+  color: #333;
+  font-size: 1em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
   .hamburger {
     display: block;
-    font-size: 2em;
-    cursor: pointer;
-    z-index: 2000;
-    background-color: lightblue;
-    padding: 5px;
-    border-radius: 5px;
   }
+
+  .navbar-right {
+    display: none; // Hide right-side elements on mobile
+  }
+
+  .mobile-menu {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    width: 180px;
+  }
+}
+
+
+
+// .navbar {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 10px 20px;
+//     background-color: #f3f3f3;
+//     width: 100%;
+//   }
   
+//   .navbar-left {
+//     display: flex;
+//     align-items: center;
+//   }
+  
+//   .app-title {
+//     font-size: 1.5em;
+//     font-weight: bold;
+//   }
+
 //   .hamburger {
-//     display: block; // Initially hidden
-//     position: fixed;
+//     display: block;
 //     font-size: 2em;
 //     cursor: pointer;
 //     z-index: 2000;
-//     margin-left: 10px;
-//     background-color: lightgray;
+//     background-color: lightblue;
 //     padding: 5px;
 //     border-radius: 5px;
 //   }
   
-  .navbar-right {
-    display: flex;
-    align-items: center;
-  }
+// //   .hamburger {
+// //     display: block; // Initially hidden
+// //     position: fixed;
+// //     font-size: 2em;
+// //     cursor: pointer;
+// //     z-index: 2000;
+// //     margin-left: 10px;
+// //     background-color: lightgray;
+// //     padding: 5px;
+// //     border-radius: 5px;
+// //   }
   
-  .nav-link {
-    margin-right: 15px;
-    text-decoration: none;
-    color: #333;
-    font-size: 1em;
-  }
+//   .navbar-right {
+//     display: flex;
+//     align-items: center;
+//   }
   
-  .search-icon {
-    margin-right: 15px;
-    font-size: 1.2em;
-    cursor: pointer;
-  }
+//   .nav-link {
+//     margin-right: 15px;
+//     text-decoration: none;
+//     color: #333;
+//     font-size: 1em;
+//   }
   
-  .login-btn,
-  .signup-btn {
-    margin-right: 10px;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+//   .search-icon {
+//     margin-right: 15px;
+//     font-size: 1.2em;
+//     cursor: pointer;
+//   }
   
-  .login-btn {
-    background-color: #e0e0e0;
-  }
+//   .login-btn,
+//   .signup-btn {
+//     margin-right: 10px;
+//     padding: 8px 16px;
+//     border: none;
+//     border-radius: 4px;
+//     cursor: pointer;
+//   }
   
-  .signup-btn {
-    background-color: #0078D4;
-    color: white;
-  }
+//   .login-btn {
+//     background-color: #e0e0e0;
+//   }
   
-  .signup-btn:hover {
-    background-color: #005a9e;
-  }
+//   .signup-btn {
+//     background-color: #0078D4;
+//     color: white;
+//   }
+  
+//   .signup-btn:hover {
+//     background-color: #005a9e;
+//   }
 
   
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .hamburger {
-      display: block; // Show hamburger icon on small screens
-      position: fixed;
-      top: 15px;
-      right: 20px;
-    }
+//   /* Responsive Styles */
+//   @media (max-width: 768px) {
+//     .hamburger {
+//       display: block; // Show hamburger icon on small screens
+//       position: fixed;
+//       top: 15px;
+//       right: 20px;
+//     }
 
-    .navbar-right {
-        display: none; /* Initially hidden */
-        flex-direction: column;
-        position: absolute;
-        top: 50px;
-        right: 0;
-        background-color: #f3f3f3;
-        width: 200px;
-        padding: 10px;
-        border: 1px solid #ccc;
-        z-index: 1000;
-      }
+//     .navbar-right {
+//         display: none; /* Initially hidden */
+//         flex-direction: column;
+//         position: absolute;
+//         top: 50px;
+//         right: 0;
+//         background-color: #f3f3f3;
+//         width: 200px;
+//         padding: 10px;
+//         border: 1px solid #ccc;
+//         z-index: 1000;
+//       }
 
   
-    .navbar-right.open {
-      display: flex; // Show the dropdown when open
-    }
+//     .navbar-right.open {
+//       display: flex; // Show the dropdown when open
+//     }
   
-    .nav-link,
-    .search-icon,
-    .login-btn,
-    .signup-btn {
-      margin: 10px 0;
-    }
+//     .nav-link,
+//     .search-icon,
+//     .login-btn,
+//     .signup-btn {
+//       margin: 10px 0;
+//     }
 
-    .nav-link {
-        padding: 10px;
-        width: 100%;
-        text-align: center;
-    }
-  }
+//     .nav-link {
+//         padding: 10px;
+//         width: 100%;
+//         text-align: center;
+//     }
+//   }
   
