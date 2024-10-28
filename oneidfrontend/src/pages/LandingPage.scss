@@ -1,45 +1,97 @@
 
+// .landing-container {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     height: 100vh;
+//     text-align: center;
+//     padding: 20px;
+// }
+
+// .main-heading {
+//     font-size: 4em;
+//     font-weight: bold;
+//     margin: 0.5em 0;
+// }
+
+// .sub-heading {
+//     font-size: 1.5em;
+//     margin-bottom: 2em;
+// }
+
+// .create-id-button {
+//     background-color: #28a745;
+//     color: white;
+//     padding: 15px 30px;
+//     border-radius: 5px;
+//     text-decoration: none;
+//     font-size: 1.2em;
+//     margin-bottom: 2em;
+// }
+
+// .create-id-button:hover {
+//     background-color: #218838;
+// }
+
+// .service-intro {
+//     background-color: #002d72;
+//     color: white;
+//     padding: 30px;
+//     width: 100%;
+//     margin-top: 2em;
+// }
+
+
 .landing-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    width: 100%;
     text-align: center;
-    padding: 20px;
+}
+
+.intro-section {
+    background-color: #0078D4; // Main blue color
+    color: white;
+    width: 100%;
+    padding: 60px 0; // Increase padding for better spacing
 }
 
 .main-heading {
-    font-size: 4em;
-    font-weight: bold;
-    margin: 0.5em 0;
+    font-size: 3.5em;
+    margin: 0.2em 0;
 }
 
 .sub-heading {
     font-size: 1.5em;
-    margin-bottom: 2em;
+    margin: 0.5em 0 2em 0; // Adjust margin for better spacing
 }
 
 .create-id-button {
-    background-color: #28a745;
+    background-color: #28a745; // Green color for button
     color: white;
     padding: 15px 30px;
     border-radius: 5px;
     text-decoration: none;
     font-size: 1.2em;
-    margin-bottom: 2em;
+    margin-top: 1em;
+    transition: background-color 0.3s; // Smooth transition for hover
 }
 
 .create-id-button:hover {
-    background-color: #218838;
+    background-color: #218838; // Darker green on hover
 }
 
 .service-intro {
-    background-color: #002d72;
+    background-color: #002d72; // Dark blue section
     color: white;
-    padding: 30px;
+    padding: 50px 0; // Increased padding for better alignment
     width: 100%;
-    margin-top: 2em;
+}
+
+.service-intro h2 {
+    margin-bottom: 0.5em;
 }
 
 .footer {
