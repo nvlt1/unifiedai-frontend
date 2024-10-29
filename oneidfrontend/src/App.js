@@ -7,6 +7,9 @@ import Navbar from './components/Navbar/Navbar';
 import LandingPage from './pages/LandingPage';
 import CreateIDPage from './pages/CreateIDPage';
 import CreateIDPage2 from './pages/CreateIDPage2';
+import VerifiedIDPage from './pages/VerifiedIDPage';
+import SystemInProgressPage from './pages/SystemInProgressPage';
+import Error404Page from './pages/Error404Page';
 import DashboardPage from './pages/DashboardPage';
 import SettingsPage from './pages/SettingsPage';
 import VerificationPage from './pages/VerificationPage';
@@ -21,10 +24,13 @@ function App (){
         <Route path="/" element={<LandingPage />} />
         <Route path="/create-id" element={<CreateIDPage />} />
         <Route path="/create-id-2" element={<CreateIDPage2 />} />
+        <Route path="/verified-id" element={<VerifiedIDPage />} />
+        <Route path="/system-in-progress" element={<SystemInProgressPage />} /> 
+        <Route path="*" element={<Error404Page />} />
         <Route path="dashboard" element={<DashboardPage />} />
         <Route path="/settings" element={<SettingsPage />} />
         <Route path="/verification" element={<VerificationPage />} />
-        <Route path="share-identity" element={<ShareIdentityPage />} />
+        <Route path="/share-identity" element={<ShareIdentityPage />} />
       </Routes>
     </Router>
   );
