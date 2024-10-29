@@ -5,11 +5,16 @@ import './LandingPage.scss';
 
 
 const LandingPage = () => {
+
     return (
         <div className="landing-container">
             <div className="intro-section">
-                <h1 className="main-heading">OneID New Experience</h1>
-                <p className="sub-heading">UnifiedAI Technological Solutions</p>
+            <p className="sub-heading">UnifiedAI Technological Solutions</p>
+                <h1 className="main-heading">
+                    <span className="line-one">OneID</span> 
+                    <span className="line-two">New Experience</span>
+                </h1>
+                
                 <Link to="/create-id" className="create-id-button">
                     Create Your OneID
                 </Link>

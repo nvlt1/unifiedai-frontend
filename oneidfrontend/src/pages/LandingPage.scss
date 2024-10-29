@@ -1,75 +1,43 @@
-
-// .landing-container {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     height: 100vh;
-//     text-align: center;
-//     padding: 20px;
-// }
-
-// .main-heading {
-//     font-size: 4em;
-//     font-weight: bold;
-//     margin: 0.5em 0;
-// }
-
-// .sub-heading {
-//     font-size: 1.5em;
-//     margin-bottom: 2em;
-// }
-
-// .create-id-button {
-//     background-color: #28a745;
-//     color: white;
-//     padding: 15px 30px;
-//     border-radius: 5px;
-//     text-decoration: none;
-//     font-size: 1.2em;
-//     margin-bottom: 2em;
-// }
-
-// .create-id-button:hover {
-//     background-color: #218838;
-// }
-
-// .service-intro {
-//     background-color: #002d72;
-//     color: white;
-//     padding: 30px;
-//     width: 100%;
-//     margin-top: 2em;
-// }
-
-
 .landing-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    text-align: center;
 }
 
 .intro-section {
     background-color: #0078D4;
     color: white;
     width: 100%;
-    padding: 60px 0;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    text-align: center; 
 }
 
 .main-heading {
-    font-size: 3.5em;
-    margin: 0.2em 0;
+    font-size: 4em; 
+    line-height: 1.2em; 
+    margin: 0;
+}
+
+.line-one {
+    display: block;
+}
+
+.line-two {
+    display: block;
 }
 
 .sub-heading {
     font-size: 1.5em;
-    margin: 0.5em 0 2em 0;
+    margin: 0.5em 0 1.5em 0; 
 }
 
 .create-id-button {
-    background-color: #28a745;
+    background-color: #28a745; 
     color: white;
     padding: 15px 30px;
     border-radius: 5px;
@@ -77,6 +45,7 @@
     font-size: 1.2em;
     margin-top: 1em;
     transition: background-color 0.3s;
+    display: inline-block; 
 }
 
 .create-id-button:hover {
@@ -86,8 +55,9 @@
 .service-intro {
     background-color: #002d72;
     color: white;
-    padding: 50px 0; 
+    padding: 50px 0;
     width: 100%;
+    text-align: center;
 }
 
 .service-intro h2 {
