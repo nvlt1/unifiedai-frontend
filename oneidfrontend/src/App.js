@@ -6,6 +6,7 @@ import Input from './components/Input/Input';
 import Navbar from './components/Navbar/Navbar';
 import LandingPage from './pages/LandingPage';
 import CreateIDPage from './pages/CreateIDPage';
+import CreateIDPage2 from './pages/CreateIDPage2';
 import DashboardPage from './pages/DashboardPage';
 import SettingsPage from './pages/SettingsPage';
 import VerificationPage from './pages/VerificationPage';
@@ -19,6 +20,7 @@ function App (){
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/create-id" element={<CreateIDPage />} />
+        <Route path="/create-id-2" element={<CreateIDPage2 />} />
         <Route path="dashboard" element={<DashboardPage />} />
         <Route path="/settings" element={<SettingsPage />} />
         <Route path="/verification" element={<VerificationPage />} />
@@ -27,20 +29,5 @@ function App (){
     </Router>
   );
 }
-
-// function App() {
-//   return (
-//     <Router>
-//     <div className="App">
-//       <Navbar />
-//       <div style={{ padding: '20px' }}>
-//         <h1>Welcome to OneID</h1>
-//         <Input label="Username" placeholder="Enter your username" />
-//         <Button text="Submit" onClick={() => alert('Button clicked!')} />
-//       </div>
-//     </div>
-//     </Router>
-//   );
-// }
 
 export default App;
