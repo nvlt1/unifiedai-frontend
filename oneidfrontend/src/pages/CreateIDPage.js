@@ -4,13 +4,12 @@ import './CreateIDPage.scss';
 
 const CreateIDPage = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
+    fullName: '',
     email: '',
-    password: ''
+    dob: ''
   });
 
-  const navigate = useNavigate(); // Initialize the navigation hook
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,7 +20,7 @@ const CreateIDPage = () => {
     e.preventDefault();
     // Add form submission logic here, e.g., API call
     console.log('Form submitted:', formData);
-    
+
     // On successful submission, navigate to CreateIDPage2
     navigate('/create-id-2');
   };
@@ -30,40 +29,38 @@ const CreateIDPage = () => {
     <div className="create-id-container">
       <h2>Create Your OneID</h2>
       <form className="create-id-form" onSubmit={handleSubmit}>
+        <label htmlFor="fullName">Full Name</label>
         <input
           type="text"
-          name="firstName"
-          placeholder="First Name"
-          value={formData.firstName}
+          name="fullName"
+          id="fullName"
+          placeholder="Full Name"
+          value={formData.fullName}
           onChange={handleChange}
           required
         />
-        <input
-          type="text"
-          name="lastName"
-          placeholder="Last Name"
-          value={formData.lastName}
-          onChange={handleChange}
-          required
-        />
+        <label htmlFor="email">Email Address</label>
         <input
           type="email"
           name="email"
-          placeholder="Email"
+          id="email"
+          placeholder="Email Address"
           value={formData.email}
           onChange={handleChange}
           required
         />
+        <label htmlFor="dob">Date of Birth</label>
         <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          value={formData.password}
+          type="date"
+          name="dob"
+          id="dob"
+          placeholder="Date of Birth"
+          value={formData.dob}
           onChange={handleChange}
           required
         />
         <button type="submit" className="submit-btn">
-          Create Your OneID
+          Create Your ONeID
         </button>
       </form>
     </div>
@@ -71,72 +68,3 @@ const CreateIDPage = () => {
 };
 
 export default CreateIDPage;
-
-
-// import React, { useState } from 'react';
-// import './CreateIDPage.scss';
-
-// const CreateIDPage = () => {
-//   const [formData, setFormData] = useState({
-//     firstName: '',
-//     lastName: '',
-//     email: '',
-//     password: ''
-//   });
-
-//   const handleChange = (e) => {
-//     const { name, value } = e.target;
-//     setFormData({ ...formData, [name]: value });
-//   };
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     console.log('Form submitted:', formData);
-    
-//   };
-
-//   return (
-//     <div className="create-id-container">
-//       <h2>Create Your OneID</h2>
-//       <form className="create-id-form" onSubmit={handleSubmit}>
-//         <input
-//           type="text"
-//           name="firstName"
-//           placeholder="First Name"
-//           value={formData.firstName}
-//           onChange={handleChange}
-//           required
-//         />
-//         <input
-//           type="text"
-//           name="lastName"
-//           placeholder="Last Name"
-//           value={formData.lastName}
-//           onChange={handleChange}
-//           required
-//         />
-//         <input
-//           type="email"
-//           name="email"
-//           placeholder="Email"
-//           value={formData.email}
-//           onChange={handleChange}
-//           required
-//         />
-//         <input
-//           type="password"
-//           name="password"
-//           placeholder="Password"
-//           value={formData.password}
-//           onChange={handleChange}
-//           required
-//         />
-//         <button type="submit" className="submit-btn">
-//           Create Your OneID
-//         </button>
-//       </form>
-//     </div>
-//   );
-// };
-
-// export default CreateIDPage;
