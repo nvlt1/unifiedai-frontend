@@ -13,7 +13,7 @@
 }
 
 .confirmation-image img {
-  width: 150px; /* Adjust the width as needed */
+  width: 150px; // width adjust as needed
   height: auto;
   margin-bottom: 10px;
 }
@@ -42,49 +42,3 @@ p {
 .email-check-btn:hover {
   background-color: #218838;
 }
-
-
-// .create-id-confirmation {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     padding: 40px;
-//     background-color: #f3f3f3;
-//     min-height: 100vh;
-//     text-align: center;
-//   }
-  
-//   .confirmation-placeholder {
-//     margin-bottom: 20px;
-//   }
-  
-//   .emoji {
-//     font-size: 3em;
-//     margin-bottom: 10px;
-//   }
-  
-//   h2 {
-//     font-size: 2em;
-//     margin-bottom: 10px;
-//   }
-  
-//   p {
-//     font-size: 1.2em;
-//     margin-bottom: 20px;
-//   }
-  
-//   .email-check-btn {
-//     padding: 12px 20px;
-//     background-color: #28a745;
-//     color: white;
-//     font-size: 1.2em;
-//     border: none;
-//     border-radius: 5px;
-//     cursor: pointer;
-//     transition: background-color 0.3s;
-//   }
-  
-//   .email-check-btn:hover {
-//     background-color: #218838;
-//   }
-  

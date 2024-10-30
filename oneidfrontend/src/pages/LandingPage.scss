@@ -10,13 +10,13 @@
     background: url('../assets/Blue Background.png') no-repeat center center/cover;
     color: white;
     width: 100%;
-    padding: 80px 20px; /* Adjusted padding */
+    padding: 80px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-height: 80vh; /* Ensure full height coverage */
+    min-height: 80vh; 
 }
 
 .main-heading {
@@ -67,94 +67,3 @@
     color: #333;
     padding: 20px;
 }
-
-// .landing-container {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     width: 100%;
-// }
-
-// .intro-section {
-//     background-image: url('../assets/Blue Background.png'); /* Set background image directly in CSS */
-//     background-size: cover; /* Ensure it covers the container */
-//     background-repeat: no-repeat; /* Prevent repeating */
-//     background-position: center; /* Center the image */
-//     position: relative; /* Enable positioning of overlay */
-//     color: white;
-//     width: 100%;
-//     padding: 100px 20px; /* Adjusted padding for better spacing */
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     text-align: center;
-//     min-height: 80vh; /* Ensure full height coverage */
-// }
-
-// /* Add a dark overlay for better text visibility */
-// .intro-section::before {
-//     content: '';
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     background-color: rgba(0, 0, 0, 0.4); /* Black overlay with 40% opacity */
-//     z-index: 1; /* Position it below the text */
-// }
-
-// .main-heading {
-//     font-size: 4em; 
-//     line-height: 1.2em; 
-//     margin: 0;
-//     z-index: 2; /* Ensure text is above the overlay */
-//     position: relative;
-// }
-
-// .line-one, .line-two {
-//     display: block;
-// }
-
-// .sub-heading {
-//     font-size: 1.5em;
-//     margin: 0.5em 0 1.5em 0;
-//     z-index: 2; /* Ensure text is above the overlay */
-//     position: relative;
-// }
-
-// .create-id-button {
-//     background-color: #28a745; 
-//     color: white;
-//     padding: 15px 30px;
-//     border-radius: 5px;
-//     text-decoration: none;
-//     font-size: 1.2em;
-//     margin-top: 1em;
-//     transition: background-color 0.3s;
-//     display: inline-block; 
-//     z-index: 2; /* Ensure button is above the overlay */
-//     position: relative;
-// }
-
-// .create-id-button:hover {
-//     background-color: #218838;
-// }
-
-// .service-intro {
-//     background-color: #002d72;
-//     color: white;
-//     padding: 50px 0;
-//     width: 100%;
-//     text-align: center;
-// }
-
-// .service-intro h2 {
-//     margin-bottom: 0.5em;
-// }
-
-// .footer {
-//     margin-top: 2em;
-//     color: #333;
-//     padding: 20px;
-// }
