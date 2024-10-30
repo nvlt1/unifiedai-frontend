@@ -7,42 +7,51 @@
     padding: 40px;
     min-height: 100vh;
     text-align: center;
-  }
-  
-  .verify-logo {
+}
+
+.verify-logo {
     width: 350px;
     margin-bottom: 20px;
-  }
-  
-  h2 {
+}
+
+h2 {
     font-size: 1.5em;
     margin: 20px 0;
-  }
-  
-  .verify-form {
+}
+
+.line-separator {
+    width: 100%;
+    max-width: 330px; /* Match width of input and button */
+    height: 2px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.verify-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     max-width: 300px;
-  }
-  
-  .verify-form label {
+}
+
+.verify-form label {
     align-self: flex-start;
     font-size: 0.9em;
     margin-bottom: 5px;
-  }
-  
-  .verify-form input[type="email"] {
+}
+
+.verify-form input[type="email"] {
     padding: 10px;
     margin-bottom: 15px;
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1em;
-  }
-  
-  .verify-btn {
+}
+
+.verify-btn {
+    width: 108%; /* Match width of the input field */
     padding: 12px 20px;
     background-color: #28a745;
     color: white;
@@ -51,9 +60,69 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
-  
-  .verify-btn:hover {
+}
+
+.verify-btn:hover {
     background-color: #218838;
-  }
+}
+
+
+// .verify-identity-container {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     background-color: #0078D4;
+//     color: white;
+//     padding: 40px;
+//     min-height: 100vh;
+//     text-align: center;
+//   }
+  
+//   .verify-logo {
+//     width: 350px;
+//     margin-bottom: 20px;
+//   }
+  
+//   h2 {
+//     font-size: 1.5em;
+//     margin: 20px 0;
+//   }
+  
+//   .verify-form {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     width: 100%;
+//     max-width: 300px;
+//   }
+  
+//   .verify-form label {
+//     align-self: flex-start;
+//     font-size: 0.9em;
+//     margin-bottom: 5px;
+//   }
+  
+//   .verify-form input[type="email"] {
+//     padding: 10px;
+//     margin-bottom: 15px;
+//     width: 100%;
+//     border: 1px solid #ccc;
+//     border-radius: 5px;
+//     font-size: 1em;
+//   }
+  
+//   .verify-btn {
+//     padding: 12px 20px;
+//     background-color: #28a745;
+//     color: white;
+//     font-size: 1em;
+//     border: none;
+//     border-radius: 5px;
+//     cursor: pointer;
+//     transition: background-color 0.3s;
+//   }
+  
+//   .verify-btn:hover {
+//     background-color: #218838;
+//   }
   
