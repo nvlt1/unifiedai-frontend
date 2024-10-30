@@ -1,8 +1,8 @@
 // import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Button from './components/Button/Button';
-import Input from './components/Input/Input';
+// import Button from './components/Button/Button';
+// import Input from './components/Input/Input';
 import Navbar from './components/Navbar/Navbar';
 import LandingPage from './pages/LandingPage';
 import CreateIDPage from './pages/CreateIDPage';
@@ -14,6 +14,8 @@ import DashboardPage from './pages/DashboardPage';
 import SettingsPage from './pages/SettingsPage';
 import VerificationPage from './pages/VerificationPage';
 import ShareIdentityPage from './pages/ShareIdentityPage';
+import LoginPage from './pages/LoginPage';
+import VerifyIdentityPage from './pages/VerifyIdentityPage';
 
 
 function App (){
@@ -26,6 +28,8 @@ function App (){
         <Route path="/create-id-2" element={<CreateIDPage2 />} />
         <Route path="/verified-id" element={<VerifiedIDPage />} />
         <Route path="/system-in-progress" element={<SystemInProgressPage />} /> 
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/verify-identity" element={<VerifyIdentityPage />} /> 
         <Route path="*" element={<Error404Page />} />
         <Route path="dashboard" element={<DashboardPage />} />
         <Route path="/settings" element={<SettingsPage />} />
