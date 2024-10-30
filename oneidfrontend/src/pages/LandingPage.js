@@ -1,17 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './LandingPage.scss';
-// import backgroundImage from '../../assets/background.png'; get the image and plug it into assets folder eventually
-
+import backgroundImage from '../assets/Blue Background.png';
 
 const LandingPage = () => {
-
     return (
         <div className="landing-container">
-            <div className="intro-section">
-            <p className="sub-heading">UnifiedAI Technological Solutions</p>
+            <div className="intro-section" style={{ backgroundImage: `url(${backgroundImage})` }}>
+                <p className="sub-heading">UnifiedAI Technological Solutions</p>
                 <h1 className="main-heading">
-                    <span className="line-one">OneID</span> 
+                    <span className="line-one">ONeID</span>
                     <span className="line-two">New Experience</span>
                 </h1>
                 
@@ -29,6 +27,5 @@ const LandingPage = () => {
         </div>
     );
 };
-
 
 export default LandingPage;
