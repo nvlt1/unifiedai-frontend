@@ -24,19 +24,27 @@
   transition: background-color 0.3s, transform 0.3s;
 
   &:hover {
-    background-color: #1e90ff; 
-    transform: scale(1.1); 
+    background-color: #1e90ff;
+    transform: scale(1.1);
   }
 
   &:active {
     background-color: #005a9e;
-    transform: scale(0.95); 
+    transform: scale(0.95);
   }
+}
+
+.navbar-logo {
+  width: 80px; // Adjust width as needed
+  height: auto;
+  margin-right: 10px; // Space between logo and text
+  filter: brightness(0.6); // Adjust this value to make it darker or lighter
 }
 
 .app-title {
   font-size: 1.5em;
   font-weight: bold;
+  color: #000; /* Match the design color */
 }
 
 .navbar-right {
@@ -61,6 +69,7 @@
 
 .login-btn {
   background-color: #e0e0e0;
+  color: #000;
 }
 
 .signup-btn {
@@ -101,14 +110,13 @@
 
   &:hover {
     background-color: #e0e0e0;
-    padding-left: 10px; 
+    padding-left: 10px;
   }
 
   &:active {
     background-color: #ccc;
   }
 }
-
 
 @media (max-width: 768px) {
   .hamburger {
