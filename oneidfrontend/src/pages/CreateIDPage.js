@@ -11,7 +11,7 @@ const CreateIDPage = () => {
     email: '',
     phoneNumber: '',
     dob: '',
-    deviceFingerprint: Math.random().toString(36).substring(2, 15) // Temporary placeholder for device fingerprint
+    deviceFingerprint: Math.random().toString(36).substring(2, 15)
   });
 
   const navigate = useNavigate();
@@ -24,10 +24,8 @@ const CreateIDPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Make the API call to register the user
       const response = await axios.post('/api/auth/register', formData);
       alert('Registration successful! Please check your email for verification.');
-      // Navigate to the next step
       navigate('/create-id-2');
     } catch (error) {
       console.error('Registration failed:', error);
