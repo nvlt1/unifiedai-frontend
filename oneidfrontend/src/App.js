@@ -1,8 +1,5 @@
-// import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-// import Button from './components/Button/Button';
-// import Input from './components/Input/Input';
 import Navbar from './components/Navbar/Navbar';
 import LandingPage from './pages/LandingPage';
 import CreateIDPage from './pages/CreateIDPage';
