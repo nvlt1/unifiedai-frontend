@@ -16,6 +16,9 @@ import VerificationPage from './pages/VerificationPage';
 import ShareIdentityPage from './pages/ShareIdentityPage';
 import LoginPage from './pages/LoginPage';
 import VerifyIdentityPage from './pages/VerifyIdentityPage';
+import OneTimePasscodePage from './pages/OneTimePasscodePage';
+import OneIDVerifiedPage from './pages/OneIDVerifiedPage';
+import OneIDUnverifiedPage from './pages/OneIDUnverifiedPage';
 
 
 function App (){
@@ -30,6 +33,9 @@ function App (){
         <Route path="/system-in-progress" element={<SystemInProgressPage />} /> 
         <Route path="/login" element={<LoginPage />} />
         <Route path="/verify-identity" element={<VerifyIdentityPage />} /> 
+        <Route path="/otp" element={<OneTimePasscodePage />} />
+        <Route path="/oneid-verified" element={<OneIDVerifiedPage />} />
+        <Route path="/oneid-unverified" element={<OneIDUnverifiedPage />} />       
         <Route path="*" element={<Error404Page />} />
         <Route path="dashboard" element={<DashboardPage />} />
         <Route path="/settings" element={<SettingsPage />} />
