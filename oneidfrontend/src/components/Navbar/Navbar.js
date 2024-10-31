@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className="hamburger" onClick={toggleMenu}>
           ☰
         </div>
-        <img src={logo} alt="ONeID Logo" className="navbar-logo" /> {/* Logo */}
+        <img src={logo} alt="ONeID Logo" className="navbar-logo" />
         <span className="app-title">ONeID</span>
       </div>
 
@@ -29,7 +29,6 @@ const Navbar = () => {
 
       <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
         <Link to="/" className="nav-link" onClick={toggleMenu}>Home</Link>
-        {/* Removed Create ID */}
         <Link to="/dashboard" className="nav-link" onClick={toggleMenu}>Dashboard</Link>
         <Link to="/settings" className="nav-link" onClick={toggleMenu}>Settings</Link>
         <Link to="/verification" className="nav-link" onClick={toggleMenu}>Verification</Link>
