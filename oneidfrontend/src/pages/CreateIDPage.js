@@ -18,10 +18,9 @@ const CreateIDPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add form submission logic here, the API call
+    // Add form submission logic here, the API calls here
     console.log('Form submitted:', formData);
 
-    // On success navigate to CreateIDPage2
     navigate('/create-id-2');
   };
 

@@ -22,7 +22,7 @@ const LoginPage = () => {
     <div className="login-container">
       <img src={logo} alt="ONeID Logo" className="login-logo" />
       <h2>Log in to your account</h2>
-      <div className="separator-line"></div> {/* White line added */}
+      <div className="separator-line"></div>
       <form className="login-form" onSubmit={handleSubmit}>
         <label htmlFor="email">Username</label>
         <input
@@ -33,7 +33,7 @@ const LoginPage = () => {
           onChange={handleChange}
           required
         />
-        <button type="submit" className="login-btn login-page-btn">Log in</button> {/* Added login-page-btn */}
+        <button type="submit" className="login-btn login-page-btn">Log in</button> 
       </form>
     </div>
   );

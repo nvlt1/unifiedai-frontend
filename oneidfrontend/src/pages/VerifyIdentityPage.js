@@ -18,7 +18,7 @@ const VerifyIdentityPage = () => {
     <div className="verify-identity-container">
       <img src={logo} alt="ONeID Logo" className="verify-logo" />
       <h2>Verify Identity</h2>
-      <div className="line-separator"></div> {/* Add line separator */}
+      <div className="line-separator"></div>
       <form className="verify-form" onSubmit={handleSubmit}>
         <label htmlFor="email">Email address</label>
         <input

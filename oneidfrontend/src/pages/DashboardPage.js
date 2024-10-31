@@ -8,11 +8,11 @@ const DashboardPage = () => {
       <h2>ONeID Services</h2>
       <div className="services">
         <Link to="/verification" className="service-card">
-          <div className="service-icon">📋</div> {/* Emoji placeholder for Verify Identity */}
+          <div className="service-icon">📋</div>
           <p>Verify Identity</p>
         </Link>
         <Link to="/manage-credentials" className="service-card">
-          <div className="service-icon">🛠️</div> {/* Emoji placeholder for Manage Credentials */}
+          <div className="service-icon">🛠️</div> 
           <p>Manage Credentials</p>
         </Link>
       </div>
@@ -21,12 +21,3 @@ const DashboardPage = () => {
 };
 
 export default DashboardPage;
-
-
-// import React from 'react';
-
-// const DashboardPage = () => {
-//     return <h2>Welcome to the Dashboard!</h2>
-// };
-
-// export default DashboardPage;
