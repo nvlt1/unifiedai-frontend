@@ -5,7 +5,9 @@ import './LoginPage.scss';
 import logo from '../assets/ONeID logo.png';
 
 const LoginPage = () => {
-  const [formData, setFormData] = useState({ username: '', password: '' });
+  // used for testing login
+  const [formData, setFormData] = useState({ username: 'testuser', password: 'testpassword' });
+  // const [formData, setFormData] = useState({ username: '', password: '' });
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
@@ -20,23 +22,51 @@ const LoginPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    try {
-      const response = await api.post('/auth/login', {
-        username: formData.username,
-        password: formData.password,
-        deviceFingerprint: 'string',
-      });
+        // checks for   hardcoded credentials
+        if (formData.username === 'testuser' && formData.password === 'testpassword') {
+          // Set fake tokens for testing and navigate to dashboard
+          localStorage.setItem('accessToken', 'fake-access-token');
+          localStorage.setItem('refreshToken', 'fake-refresh-token');
+          navigate('/dashboard');
+        } else {
+          try {
+            // move forward with API call if credentials aren't hardcoded
+            const response = await api.post('/auth/login', {
+              username: formData.username,
+              password: formData.password,
+              deviceFingerprint: 'string',
+            });
+    
+            const { accessToken, refreshToken } = response.data;
+            localStorage.setItem('accessToken', accessToken);
+            localStorage.setItem('refreshToken', refreshToken);
+    
+            navigate('/dashboard');
+          } catch (error) {
+            console.error('Login error:', error);
+            setError('Login failed. Please try again.');
+          }
+        }
+      };
 
-      const { accessToken, refreshToken } = response.data;
-      localStorage.setItem('accessToken', accessToken);
-      localStorage.setItem('refreshToken', refreshToken);
+      // uncomment for regualar testing once connected.------------------
+  //   try {
+  //     const response = await api.post('/auth/login', {
+  //       username: formData.username,
+  //       password: formData.password,
+  //       deviceFingerprint: 'string',
+  //     });
 
-      navigate('/dashboard');
-    } catch (error) {
-      console.error('Login error:', error);
-      setError('Login failed. Please try again.');
-    }
-  };
+  //     const { accessToken, refreshToken } = response.data;
+  //     localStorage.setItem('accessToken', accessToken);
+  //     localStorage.setItem('refreshToken', refreshToken);
+
+  //     navigate('/dashboard');
+  //   } catch (error) {
+  //     console.error('Login error:', error);
+  //     setError('Login failed. Please try again.');
+  //   }
+  // };
 
   return (
     <div className="login-container">
