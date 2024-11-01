@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import api from '../utils/auth';  // Import the axios instance
+import api from '../utils/auth'; 
 import './LoginPage.scss';
 import logo from '../assets/ONeID logo.png';
 
