@@ -28,7 +28,7 @@ const LoginPage = () => {
         body: JSON.stringify({
           username: formData.username,
           password: formData.password,
-          deviceFingerprint: 'random-string', 
+          deviceFingerprint: 'string', 
         }),
       });
 
