@@ -25,14 +25,14 @@ const LoginPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Check for hardcoded credentials first for testing purposes
+    // Checking for my hardcoded credentials first for testing purposes
     if (formData.username === 'testuser' && formData.password === 'testpassword') {
       // Set fake tokens in localStorage for testing, then navigate to dashboard
       localStorage.setItem('accessToken', 'fake-access-token');
       localStorage.setItem('refreshToken', 'fake-refresh-token');
       navigate('/dashboard');
     } else {
-      // Uncomment this block once backend is connected for actual API call
+      // need to uncomment this block once backend is connected for actual API call, below is the commented out api call with no hardcoded testing user
       try {
         const response = await api.post('/auth/login', {
           username: formData.username,
@@ -44,7 +44,7 @@ const LoginPage = () => {
         localStorage.setItem('accessToken', accessToken);
         localStorage.setItem('refreshToken', refreshToken);
 
-        // Set authorization header for future API requests
+        // Here, setting the authorization header for future API requests
         api.defaults.headers.common['Authorization'] = `Bearer ${accessToken}`;
 
         // Check verification status after login
@@ -54,7 +54,7 @@ const LoginPage = () => {
         if (isVerified) {
           navigate('/dashboard');
         } else {
-          navigate('/verification-pending'); // Redirect if verification is pending
+          navigate('/verification-pending'); 
         }
       } catch (error) {
         console.error('Login error:', error);
