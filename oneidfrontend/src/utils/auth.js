@@ -21,3 +21,5 @@ export const refreshToken = async () => {
     return null;
   }
 };
+
+export default refreshToken;
