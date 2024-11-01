@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './DashboardPage.scss';
 
-// Import the PNG images
 import QualityControlIcon from '../assets/vecteezy_quality-control-check_44450075.png';
 import SettingsIcon from '../assets/vecteezy_settings-plan-project_44450059.png';
 
