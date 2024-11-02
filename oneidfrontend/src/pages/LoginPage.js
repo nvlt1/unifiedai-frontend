@@ -22,6 +22,7 @@ const LoginPage = () => {
     });
   };
 
+  // need to uncomment this block once backend is connected for actual API call, below is the commented out api call with no hardcoded testing user
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -32,7 +33,7 @@ const LoginPage = () => {
       localStorage.setItem('refreshToken', 'fake-refresh-token');
       navigate('/dashboard');
     } else {
-      // need to uncomment this block once backend is connected for actual API call, below is the commented out api call with no hardcoded testing user
+      
       try {
         const response = await api.post('/auth/login', {
           username: formData.username,
