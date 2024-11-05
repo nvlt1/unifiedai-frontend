@@ -7,7 +7,7 @@ const OneIDUnverifiedPage = () => {
   const navigate = useNavigate();
 
   const handleBackToDashboard = () => {
-    navigate('/login');
+    navigate('/dashboard');
   };
 
   return (
